@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  height: 100%;
 }
 
 *, *:before, *:after {
@@ -8,9 +9,10 @@ html {
 
 body {
 	font-size: 62.5%; //1em = 10px
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Lato', sans-serif;
 	color: #333;
 	line-height: 1.5;
+	height: 100%;
 }
 
 h1, h2 {
@@ -20,7 +22,7 @@ h1, h2 {
 }
 
 h1{
-	font-size: 5em;
+	font-size: 7em;
 }
 
 h2{
@@ -29,6 +31,6 @@ h2{
 
 p {
 	font-family: "Open Sans", sans-serif;
-	font-size: 1.8em;
-	margin-bottom: 1.8em;
+	font-size: 1.3em;
+	margin-bottom: 1.5em;
 }

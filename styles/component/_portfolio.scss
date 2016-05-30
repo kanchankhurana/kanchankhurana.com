@@ -1,59 +1,106 @@
-// Hero banner
-.hero-banner-wrapper{
-	height: 100%;
-  min-height: 100%;
-  background-color: #666;
+body{
+	background-image: url(../images/banner.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	transition: all 0s linear;
+	overflow-x: hidden;
+}
 
-  .hero-banner{
-  	background: url(../images/banner-5.jpg) no-repeat center center scroll;
-  	background-size: cover;
-  	width: 100%;
-  	height: 100vh;
-  	display: table;
-  	transition: all 0s linear;
+// Overlay
+#bodyOverlay{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.6);
+  z-index: -1;
+}
+
+// About
+.user-wrapper{
+	display: table;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	.user{
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+		color: #fff;
+	}
+	.role{
+		text-transform: uppercase;
+		font-weight: 600;
+		letter-spacing: 4px;
+	}
+	.quote{
+		width: 250px;
+    margin: 0 auto;
+    letter-spacing: 2px;
+    font-style: italic;
+    font-weight: 300;
+	}
+}
+
+
+// User details
+.user-group{ 	
+	.user{
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+	}
+	h1, h2{
+		font-weight: 700;
+	}
+}
+
+// Social Group
+.getInTouch{
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin: 4px 0 0 0;
+  font-weight: 600;
+  a{
+  	color: #fff;
+  	&:hover, &:active, &:focus{
+  		text-decoration: none;
+  	}
   }
 }
 
-// User details
-.user-group{
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;  	
-	.user{
-			width: 100px;
-			height: 100px;
-			border-radius: 50%;
-	}
-	h1, h2{
-		color: #fff;
-		font-weight: 700;
-	}
-	.profile{
-		color: #fff;
-		font-weight: 500;
-	}
-}
-
-// Social Profile
+// Social Group
 .social-group{
-	a{
-		height: 40px;
-    width: 40px;
-    display: inline-block;
-    text-align: center;
-    background-color: #fff;
-    padding: 12px;
-    transition: all .2s ease-in-out;
-    margin-right: 12px;
-    border-radius: 50%;
-    &:hover{
-  		transform: scale(1.1); 
-    }
+	position: absolute;
+	bottom: 5%;
+	width: 100%;
+	ul.social-icon{
+		list-style: none;
+		li{
+			display: inline-block;
+			padding: 5px 10px;
+			cursor: pointer;
+		}
 	}
 	.fa{
 		font-size: 20px;
 		line-height: 1;
-		color: #333;
+		color: #fff;
 	}
+	 li:hover{
+		.fa{
+			color: #C2185B;
+			transform: scale(1.2);
+			transition: all 0.25s ease;
+		}
+	}
+}
+
+.text-left{
+	text-align: left;
+}
+.text-right{
+	text-align: right;
 }
 
