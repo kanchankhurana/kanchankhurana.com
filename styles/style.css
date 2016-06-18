@@ -80,7 +80,7 @@ p {
   h1 {
     font-size: 7em; } }
 body {
-  background-image: url(../images/banner.jpeg);
+  background-image: url(../images/banner-min.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -136,6 +136,28 @@ body {
   position: absolute;
   bottom: 5%;
   width: 100%; }
+  .social-group a.link i.fa {
+    font-size: 16px;
+    vertical-align: middle; }
+  .social-group a.link span {
+    font-size: 14px;
+    vertical-align: middle; }
+  .social-group a.link:hover > i.fa {
+    color: #C2185B;
+    transform: scale(1.2);
+    transition: all 0.25s ease; }
+  .social-group a.link:hover > span {
+    color: #C2185B;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease; }
   .social-group ul.social-icon {
     list-style: none; }
     .social-group ul.social-icon li {
