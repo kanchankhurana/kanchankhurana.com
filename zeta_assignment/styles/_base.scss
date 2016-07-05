@@ -1,0 +1,52 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-size: 84.5%;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #333;
+	line-height: 1.5;
+	margin:0;
+	padding: 0;
+	background-color: #f7f7f7;
+}
+
+h1 {
+	font-size: 3em;
+	margin-bottom: 30px;
+	margin-top:0;
+	line-height: 1;
+}
+
+p {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1.3em;
+	margin-bottom: 1.2em;
+	color: #666;
+}
+a{
+	cursor: pointer;
+}
+
+select, input[type="text"], input[type="search"] {
+	border-radius: 30px;
+	border: 1px solid $color-gray-lighter;
+	outline: 0;
+	font-size: to-em(12);
+	// margin-bottom: 10px;
+	transition: all 0.3s ease;
+	min-width: 50px;
+	vertical-align: top;
+	line-height: 18px;
+	&:focus {
+		border-color: $color-black-light;
+	}
+}
+
+input[type="text"], input[type="search"] {
+	padding: 6px 18px;
+}

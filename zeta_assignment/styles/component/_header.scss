@@ -1,0 +1,105 @@
+header{
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+	top: 0;
+}
+
+// Full Header
+.full-header{
+	width: 100%;
+	background-color: $color-white;
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
+	height: 64px;
+}
+
+// Notification List
+.notification{
+	li{
+		&:hover{
+			border-bottom: 1px solid $color-primary;
+		}
+	}
+	li.active{
+		border-bottom: 1px solid $color-primary;
+	}
+	a{
+		display: inline-block;
+	}
+}
+
+.notify{
+  display: inline-block;
+  border-right: 1px solid $color-gray-lighter;
+  padding: 13px;
+	.fa{
+		font-size: 14px;
+    color: white;
+    vertical-align: middle;
+    background-color: $color-primary;
+    padding: 12px;
+    border-radius: 50%;
+	}
+
+	&--gray{
+		border-right: none;
+		padding: 12px;
+		.fa{
+			background-color: transparent;
+			border: 1px solid $color-gray-lighter;
+			color: $color-gray;
+		}
+	}
+}
+
+// Twitter Center Icon
+.twitter-icon{
+	display: inline-block;
+	.fa{
+		font-size: 30px;
+		padding: 17px;
+		color: $color-primary;
+	}
+}
+
+// Right Conainer
+.right-container{
+	padding: 16px;
+	.search-bar{
+		display: inline-block;
+		position: relative;
+		.form-control{
+			border-radius: 30px;
+			position: relative;
+		}
+	}
+
+	.search_icon{
+		position: absolute;
+    top: 50%;
+    right: 12px;
+    -o-transform: translateY(-50%);
+    	-ms-transform: translateY(-50%);
+    		-moz-transform: translateY(-50%);
+    			-webkit-transform: translateY(-50%);
+    				transform: translateY(-50%);
+    .fa{
+    	color: $color-gray-lighter;
+    }
+	}
+
+	input[type="search"]:focus > .search_icon{
+		display: none;
+	}
+
+	.header-profile{
+		display: inline-block;
+		float: right;
+		margin-left: 12px;
+		cursor: pointer;
+		img{
+			height: 30px;
+			width: 30px;
+		}
+	}
+}

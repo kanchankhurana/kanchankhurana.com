@@ -1,0 +1,51 @@
+/*================================= Container =================================================*/
+.container{
+	max-width: 768px;
+	margin: 0 auto;
+}
+
+/*================================= Content =================================================*/
+.content{
+	margin-top: 120px;
+}
+
+/*================================= List =================================================*/
+.list-inline {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+
+  li{
+    display: inline-block;
+    line-height: 1;
+  }
+
+  li + li{
+    margin-top: 0;
+  }
+}
+
+/*================================= Float Classes =================================================*/
+.flt-left {
+	float: left !important;
+} 
+.flt-right {
+	float: right !important;
+}
+
+hr{
+	margin: 0;
+}
+
+/*================================= Text Style Classes =================================================*/
+/*-------------- Text Alignment */
+.txt-left {
+  text-align: left;
+}
+.txt-right {
+  text-align: right;
+}
+.txt-center {
+  text-align: center;
+}

@@ -1,0 +1,83 @@
+.card{
+	background-color: #fff;
+	padding: 20px;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+	&:hover{
+		background-color: #f5f8fa;
+		cursor: pointer;
+	}
+}
+.profile_img{
+	height: 48px;
+	width: 48px;
+	border-radius: 50%;
+}
+.full-name{
+	color: $color-black;
+	margin-right: 6px;
+	font-size: 14px;
+	text-transform: capitalize;
+}
+.username{
+	color: $color-gray-light;
+}
+.post_time{
+	color: $color-gray-light;
+}
+.tweet{
+	font-weight: 300;
+	margin-top: 12px;
+	color: $color-gray;
+}
+.btn{
+	margin-right: 6px;
+	padding: 6px 12px;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	display: inline-block;
+	.fa{
+		font-size: 15px;
+		color: $color-gray-light;
+	}
+}
+
+.btngroup-inline{
+	display: inline-block;
+
+	.btn-reply, .btn-more{
+		&:hover > .fa{
+			color: #1B95E0;
+		}
+	}
+	.btn-favourite{
+		&:hover > .fa{
+			color: red;
+		}
+	}
+	.btn-refresh{
+		&:hover> .fa{
+			color: #19cf86;
+		}
+	}
+}
+.btn-arrow{
+	.fa{
+		transform: rotate(45deg);
+	}
+}
+.times{
+   display: inline-block;
+  margin-left: 6px;
+  font-size: 14px;
+  color: $color-gray-light;
+  font-weight: 600;
+}
+
+.adaptive_media{
+	width: 100%;
+	img{
+		width: 100%;
+		margin-bottom: 12px;
+	}
+}

@@ -1,0 +1,298 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  font-size: 84.5%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7; }
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 30px;
+  margin-top: 0;
+  line-height: 1; }
+
+p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.3em;
+  margin-bottom: 1.2em;
+  color: #666; }
+
+a {
+  cursor: pointer; }
+
+select, input[type="text"], input[type="search"] {
+  border-radius: 30px;
+  border: 1px solid #e3dfd8;
+  outline: 0;
+  font-size: to-em(12);
+  transition: all 0.3s ease;
+  min-width: 50px;
+  vertical-align: top;
+  line-height: 18px; }
+  select:focus, input[type="text"]:focus, input[type="search"]:focus {
+    border-color: #333; }
+
+input[type="text"], input[type="search"] {
+  padding: 6px 18px; }
+
+header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  top: 0; }
+
+.full-header {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  height: 64px; }
+
+.notification li:hover {
+  border-bottom: 1px solid #80a8cc; }
+.notification li.active {
+  border-bottom: 1px solid #80a8cc; }
+.notification a {
+  display: inline-block; }
+
+.notify {
+  display: inline-block;
+  border-right: 1px solid #e3dfd8;
+  padding: 13px; }
+  .notify .fa {
+    font-size: 14px;
+    color: white;
+    vertical-align: middle;
+    background-color: #80a8cc;
+    padding: 12px;
+    border-radius: 50%; }
+  .notify--gray {
+    border-right: none;
+    padding: 12px; }
+    .notify--gray .fa {
+      background-color: transparent;
+      border: 1px solid #e3dfd8;
+      color: #605e58; }
+
+.twitter-icon {
+  display: inline-block; }
+  .twitter-icon .fa {
+    font-size: 30px;
+    padding: 17px;
+    color: #80a8cc; }
+
+.right-container {
+  padding: 16px; }
+  .right-container .search-bar {
+    display: inline-block;
+    position: relative; }
+    .right-container .search-bar .form-control {
+      border-radius: 30px;
+      position: relative; }
+  .right-container .search_icon {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%); }
+    .right-container .search_icon .fa {
+      color: #e3dfd8; }
+  .right-container input[type="search"]:focus > .search_icon {
+    display: none; }
+  .right-container .header-profile {
+    display: inline-block;
+    float: right;
+    margin-left: 12px;
+    cursor: pointer; }
+    .right-container .header-profile img {
+      height: 30px;
+      width: 30px; }
+
+nav {
+  background-color: #fff;
+  height: 74px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px; }
+
+.navigation a {
+  display: inline-block;
+  padding: 20px 46px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px; }
+.navigation span {
+  display: block; }
+.navigation .title {
+  color: #e2ddd2;
+  margin-bottom: 6px;
+  font-weight: 300;
+  letter-spacing: .1em; }
+.navigation .value {
+  color: #000; }
+.navigation li:hover {
+  border-bottom: 4px solid #80a8cc; }
+.navigation li.active {
+  border-bottom: 4px solid #80a8cc; }
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); }
+  .card:hover {
+    background-color: #f5f8fa;
+    cursor: pointer; }
+
+.profile_img {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%; }
+
+.full-name {
+  color: #000;
+  margin-right: 6px;
+  font-size: 14px;
+  text-transform: capitalize; }
+
+.username {
+  color: #c6c1b0; }
+
+.post_time {
+  color: #c6c1b0; }
+
+.tweet {
+  font-weight: 300;
+  margin-top: 12px;
+  color: #605e58; }
+
+.btn {
+  margin-right: 6px;
+  padding: 6px 12px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: inline-block; }
+  .btn .fa {
+    font-size: 15px;
+    color: #c6c1b0; }
+
+.btngroup-inline {
+  display: inline-block; }
+  .btngroup-inline .btn-reply:hover > .fa, .btngroup-inline .btn-more:hover > .fa {
+    color: #1B95E0; }
+  .btngroup-inline .btn-favourite:hover > .fa {
+    color: red; }
+  .btngroup-inline .btn-refresh:hover > .fa {
+    color: #19cf86; }
+
+.btn-arrow .fa {
+  transform: rotate(45deg); }
+
+.times {
+  display: inline-block;
+  margin-left: 6px;
+  font-size: 14px;
+  color: #c6c1b0;
+  font-weight: 600; }
+
+.adaptive_media {
+  width: 100%; }
+  .adaptive_media img {
+    width: 100%;
+    margin-bottom: 12px; }
+
+/*================================= Container =================================================*/
+.container {
+  max-width: 768px;
+  margin: 0 auto; }
+
+/*================================= Content =================================================*/
+.content {
+  margin-top: 120px; }
+
+/*================================= List =================================================*/
+.list-inline {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block; }
+  .list-inline li {
+    display: inline-block;
+    line-height: 1; }
+  .list-inline li + li {
+    margin-top: 0; }
+
+/*================================= Float Classes =================================================*/
+.flt-left {
+  float: left !important; }
+
+.flt-right {
+  float: right !important; }
+
+hr {
+  margin: 0; }
+
+/*================================= Text Style Classes =================================================*/
+/*-------------- Text Alignment */
+.txt-left {
+  text-align: left; }
+
+.txt-right {
+  text-align: right; }
+
+.txt-center {
+  text-align: center; }
+
+/*# sourceMappingURL=styles.css.map */
