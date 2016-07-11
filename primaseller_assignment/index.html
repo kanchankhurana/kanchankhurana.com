@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Ticket Reservation</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div class="container">
+
+        <!-- User Section -->
+        <h1 class="text_c">Movie Seat Reservation</h1>
+        <div class="user_input text_c">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" placeholder="e.g. John Doe" id="name" required />
+            <label for="seat">Seats</label>
+            <input type="number" class="form-control" min="1" max="10" id="seat" placeholder="1-10" required />
+            <br><br>
+            <button type="button" class="btn-default" id="select_seats">Select Seats</button>
+        </div>
+        
+
+        <!-- Seat Layout -->
+        <div class="layout text_c">
+            <div class="screen">Screen</div>
+            <ul id="seats">
+                <li>
+                    <span class="seat-row">M</span>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                </li>
+                <li>
+                    <span class="seat-row">L</span>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                </li>
+                <li>
+                    <span class="seat-row">K</span>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                </li>
+                <li>
+                    <span class="seat-row">J</span>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                </li>
+                <li>
+                    <span class="seat-row">I</span>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                </li>
+                <li>
+                    <span class="seat-row">H</span>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                </li>
+                <li>
+                    <span class="seat-row">G</span>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                </li>
+                <li>
+                    <span class="seat-row">F</span>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                </li>
+                <li>
+                    <span class="seat-row">E</span>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                </li>
+                <li>
+                    <span class="seat-row">D</span>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                </li>
+                <li>
+                    <span class="seat-row">C</span>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                </li>
+                <li>
+                    <span class="seat-row">B</span>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                </li>
+                <li>
+                    <span class="seat-row">A</span>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                    <label for=""><input type="checkbox"><span></span></label>
+                </li>
+            </ul>
+
+            <button id="confirm" class="btn-default" type="button">Confirm Selection</button>
+        </div>
+
+        <!-- User Data -->
+        <table width="100%" cellpadding="4" cellspacing="0" id="user_data">
+            <thead>
+                <tr>
+                    <td align="middle">Name</td>
+                    <td align="middle">Seats</td>
+                    <td align="middle">Seat No.</td>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+                
+    </div>
+
+<!-- Script -->
+<script src="jq.js"></script>
+<script src="script.js"></script>
+</body>
+
+
+
+</html>

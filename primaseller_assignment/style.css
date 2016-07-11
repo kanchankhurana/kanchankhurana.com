@@ -1,0 +1,136 @@
+/* CSS declarations go here */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+/* Resuable classes*/
+.text_c {
+    text-align: center;
+}
+/* Reusable classes ends*/
+.container{
+    width: 940px;
+    margin: 0 auto;
+}
+.form-control{
+    border: 1px solid #bdbdbd;
+    border-radius: 4px;
+}
+
+.btn-default{
+    padding: 6px 12px;
+    background-color: #ef534e;
+    border: none;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn:focus{
+    outline: 0;
+}
+.btn-default:hover{
+    background-color: #eb261f;
+}
+
+/*--------- User Input Area ------*/
+.user_input {
+    margin-top: 30px;
+}
+input[type="text"], input[type="number"] {
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 20px;
+}
+
+input[type="text"]:focus, input[type="number"]:focus{
+    outline: 0 !important;
+    border-color: #757575;
+}
+
+
+.layout, #user_data {
+    display:none;
+}
+.screen {
+    border-color: #999;
+    border-radius: 20px 20px 0 0;
+    border-style: solid;
+    border-width: 4px 4px 2px 2px;
+    height: 28px;
+    margin: 20px auto;
+    width: 90%;
+}
+.seat-row{
+    width: 20px;
+}
+
+#seats {
+    margin:30px auto;
+    padding:0;
+    list-style: none;
+}
+
+#seats li {
+    text-align: center;
+    margin-bottom: 15px;
+}
+#seats li:nth-child(4){
+    margin-bottom: 35px;
+}
+#seats li > span {
+    color: #333;
+    display: inline-block;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+#seats label {
+    width:20px;
+    height: 20px;
+    display: inline-block;
+    position: relative;
+    margin-left: 20px;
+}
+#seats label:nth-child(7), #seats label:nth-child(11) {
+    margin-right: 20px;
+}
+#seats input[type="checkbox"], #seats label span {
+    position: absolute;
+    left:0; top: 0;
+    width:100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#seats label span {
+    background: #CFD8DC;
+    border-radius: 4px;
+    font-size: 10px;
+    color: #333;
+    padding: 3px;
+}
+#seats input[type="checkbox"] {
+    opacity: 0;
+    z-index: 2;
+}
+#seats input:checked + span {
+    background: #2dbaaa;
+}
+#seats input:disabled + span {
+    background: #F44336;
+}
+
+#user_data {
+    margin-top: 20px;
+}
+
+#user_data td{
+    border:1px solid #ccc;
+    border-collapse: collapse;
+}
