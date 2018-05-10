@@ -1,0 +1,117 @@
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.header {
+  height: 60px;
+  position: fixed;
+  padding: 12px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  background-color: #673ab7;
+  z-index: 9;
+}
+.logo {
+  color: #fff;
+  font-size: 2.4rem;
+  text-decoration: none;
+  display: inline-block;
+}
+.content-wrapper {
+  margin-top: 6.0rem;
+  padding: 24px 12px;
+}
+.search{
+  // padding: 32px 12px;
+  margin-bottom: 40px;
+  position: relative;
+  &__btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 13px 30px;
+    border: 0;
+    background-color: transparent;
+    border-radius: 0 0.4rem 0.4rem 0;
+    border-left: 1px solid #e0e0e0;
+    cursor: pointer;
+  }
+}
+input {
+  transition: all 0.15s ease;
+  position: relative;
+  &:focus {
+    border-color: #999;
+  }
+}
+input[type="search"]:before{
+  content: '';
+  background: url('../images/search.svg') no-repeat;
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.card {
+	overflow: hidden;
+	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1), 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+	display: block;
+  border-radius: 0.4rem;
+  margin-bottom: 1.4rem;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+
+  &__content {
+    padding: 1.2rem
+  }
+
+  &__img {
+    position: relative;
+    overflow: hidden;
+    padding-top: 130%;
+    img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+.heading {
+  font-size: 24px;
+  color: #333;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sub-heading {
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.footer {
+  background-color:#fff;
+  width: 100%;
+  border-top: 1px solid #e0e0e0;
+  padding: 50px 12px;
+}
+
+// Utility 
+.txt-c {
+  text-align: center;
+}
+.txt-strike-through {
+  text-decoration: line-through;
+}
+.font-xs {
+  font-size: 12px;
+}
