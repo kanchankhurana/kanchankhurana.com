@@ -1,0 +1,39 @@
+// Tooltip Wrapper
+.tooltip-wrapper {
+  position: relative;
+  &:hover {
+    .tooltip {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+// Tooltip & Tooltip Arrow
+.tooltip {
+  padding: 1.2em;
+  border: 0.8em solid;
+  background-color: #ffffff;
+  border-color: #b14eb5;
+  border-image: -webkit-linear-gradient(top, #b14eb5 0%, #7640b3 100%);
+  border-image-slice: 1;
+  position: absolute;
+  top: 3.2em;
+  z-index: 2;
+  width: 43em;
+  left: -13.2em;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.15s ease 0.2s;
+  &__arrow:after{
+    content: '';
+    position: absolute;
+    top: -1.3em;
+    left: 16em;
+    width: 1.1em;
+    height: 1.1em;
+    transform: rotate(45deg);
+    background-color: #b14eb5;
+    z-index: 1;
+  }
+}

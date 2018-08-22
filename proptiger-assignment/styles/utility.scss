@@ -1,0 +1,84 @@
+// Font Classes
+.font-bold {
+  font-weight: 700;
+}
+.font-medium {
+  font-weight: 600;
+}
+.font-light {
+  font-weight: 400;
+}
+
+
+// Text Colors
+.color-dark {
+  color: $color-dark;
+}
+.color-light {
+  color: $color-light;
+}
+.color-base {
+  color: color-base;
+}
+.color-delight-primary {
+  color: $color-delight-primary;
+}
+
+// Font Size
+.h1 {
+  font-size: 2.0em;
+}
+.h2 {
+  font-size: 1.8em;
+}
+.h3 {
+  font-size: 1.6em;
+}
+.h4 {
+  font-size: 1.5em;
+}
+.h5 {
+  font-size: 1.4em;
+}
+.h6 {
+  font-size: 1.3em;
+}
+
+
+// Text transform classes
+.txt-capitalize {
+  text-transform: capitalize;
+}
+.txt-uppercase {
+  text-transform: uppercase;
+}
+
+// Rupee Symbol
+.inr {
+  &:before {
+    content: '\20B9';
+    font-weight: 700;
+  }
+}
+
+// Margin helper classes
+.margin-t-s {
+  margin-top: 0.6em;
+}
+.margin-t-m {
+  margin-top: 1.2em;
+}
+.margin-r-s {
+  margin-right: 0.6em;
+}
+
+.txt-ellipsis {
+  // max-width: 400px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.full-width {
+  width: 100%;
+}

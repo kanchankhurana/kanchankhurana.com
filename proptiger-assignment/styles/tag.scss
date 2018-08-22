@@ -1,0 +1,12 @@
+// Tags
+.tag {
+  padding: 0.3em 1.2em;
+  color: $color-white;  
+  border-radius: 0.2em;
+  font-size: 1.3em;
+  display: inline-block;
+  cursor: pointer;
+  &--primary {
+    background-color: $bg-delight-primary;
+  }
+}

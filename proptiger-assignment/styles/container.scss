@@ -1,0 +1,26 @@
+
+// Main Wrapper
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+// Content Wrapper
+.content-wrapper {
+  margin-top: 6.0em;
+  padding: 24px 12px;
+}
+
+// Spacing between sections
+.section {
+  margin-top: 1.8em;
+  &--large {
+    margin-top: 2.4em;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  &:first-child {
+    margin-top: 0;
+  }
+}
